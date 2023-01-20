@@ -3,17 +3,19 @@ description: >
   Actively maintained, community-driven Firebase BaaS for chat applications
   with an optional chat UI.
 version: 1.6.4
-homepage: https://flyer.chat
-repository: https://github.com/flyerhq/flutter_firebase_chat_core
+publish_to: 'none'
 
 environment:
   sdk: ">=2.18.0 <3.0.0"
   flutter: ">=2.0.0"
 
 dependencies:
-  cloud_firestore: ^4.0.3
-  firebase_auth: ^4.1.0
-  firebase_core: ^2.1.1
+  cloud_firestore: ^3.1.14
+  firebase_auth:
+    git:
+      url: https://github.com/spynai/firebase_auth-3.3.19.git
+      ref: master
+  firebase_core: ^1.16.0
   flutter:
     sdk: flutter
   flutter_chat_types: ^3.6.0
